@@ -1,13 +1,15 @@
 <!--
     ## Commit ##
     
-    css externo, aplicação de divs, melhorias no layout, aplicação de paleta de cores
+    ajuste no tamanho dos blocos / adição de bottom
 
     ## Referencias ##
     
     Menu, lista sem decoração e na horizontal- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu
 
     Bullet acompanha o texto - https://www.w3schools.com/cssref/pr_list-style-position.asp
+
+    Divs lado a lado - https://dev.to/dawnind/3-ways-to-display-two-divs-side-by-side-3d8b
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,8 +26,7 @@
             <ul class="menu">
                 <li><a class="item-menu" href="#sobre"> Sobre mim</a></li>
                 <li><a class="item-menu" href="#profissional">Profissional</a></li>
-                <li><a class="item-menu" href="#habilidades">Habilidades</a></li>
-                <li><a class="item-menu" href="#ferramentas">Ferramentas</a></li>
+                <li><a class="item-menu" href="#habilidades-e-ferramentas">Habilidades e Ferramentas</a></li>
                 <li><a class="item-menu" href="https://gustavolendimuth.myportfolio.com">Portfólio Designer Gráfico</a></li>
                 <li><a class="item-menu" href="https://www.linkedin.com/in/gustavolendimuth">Linkedin</a></li>
             </ul>
@@ -43,6 +44,9 @@
                 <p>Sou Brasileiro, nascido em São Paulo Capital, mas no momento estou morando em Juiz de Fora em Minas Gerais.</p>
             </div>
         </div>
+
+        <!-- blocos  -->
+
         <div id="profissional" class="profissional-box">
             <div class="title">
                 <h3>Profissional</h3>
@@ -57,32 +61,34 @@
                 <p>Este ano decidi fazer uma transição de carreira, então comecei a fazer o curso de <strong>Desenvolvimento Web na Trybe</strong>, para dar início a minha jornada como DEV.</p>
             </div>
         </div>
-        <div class="habilidades-box">
-            <img id="habilidades-imagem" src="imagens/imagem-habilidades.jpg" alt="Pessoas com engrenagens">
-            <h3>Habilidades</h3>
-            <div class="habilidades-ul">
-                <ul>
-                    <li>HTML Básico</li>
-                    <li>CSS Básico</li>
-                    <li>JavaScript Básico</li>
-                    <li>Bash</li>
-                    <li>Web Design</li>
-                </ul>
+        <div id="habilidades-e-ferramentas">
+            <div class="habilidades-box">
+                <img id="habilidades-imagem" src="imagens/imagem-habilidades.jpg" alt="Pessoas com engrenagens">
+                <h3>Habilidades</h3>
+                <div class="habilidades-ul">
+                    <ul>
+                        <li>HTML Básico</li>
+                        <li>CSS Básico</li>
+                        <li>JavaScript Básico</li>
+                        <li>Bash</li>
+                        <li>Web Design</li>
+                    </ul>
+                </div>
             </div>
+            <div class="ferramentas-box">
+                <img id="ferramentas-imagem" src="imagens/imagem-ferramentas.jpg" alt="Pessoas com telas com códigos">
+                <h3>Ferramentas</h3>
+                <div class="ferramentas-ul">
+                    <ul>
+                        <li>VScode</li>
+                        <li>Adobe Dreamweaver</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Indesign</li>
+                    </ul>
+                </div>
+            </div>        
         </div>
-        <div class="ferramentas-box">
-            <img id="ferramentas-imagem" src="imagens/imagem-ferramentas.jpg" alt="Pessoas com telas com códigos">
-            <h3>Ferramentas</h3>
-            <div class="ferramentas-ul">
-                <ul>
-                    <li>VScode</li>
-                    <li>Adobe Dreamweaver</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Indesign</li>
-                </ul>
-            </div>
-        </div>        
         <div class="bottom-box">
             <img src="imagens/imagem-bottom.png" width="400px" alt="Maleta gigante e, pessoa segurando uma pasta">
             <p><a href="https://gustavolendimuth.myportfolio.com"><em>portfólio de designer gráfico</em></a></p>
