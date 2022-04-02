@@ -1,7 +1,7 @@
 <!--
     ## Commit ##
     
-    estilização, colocação de alt nas fotos, arredondamento foto perfil
+    css externo, aplicação de divs, melhorias no layout, aplicação de paleta de cores
 
     ## Referencias ##
     
@@ -17,92 +17,75 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <style>
-        body {
-            font-family: Poppins, sans-serif;
-            text-align: center;
-            text-decoration: none;
-        }
-        h1 {
-            color: #A2ABAB;
-            font-size: 40px;
-        }
-        h2{
-            color: #7D869C;
-            font-size: 32px;
-        }
-        h3{
-            color: #7D869C;
-            font-size: 25px;
-        }
-        p, li, a{
-            color: #586994;
-            font-weight: 400;
-        }
-        ul{
-            list-style-position: inside;
-        }
-        .imagem-arredondada {
-            border-radius: 100%;
-        }
-        .menu {
-            list-style-type: none;
-            display: inline-block;
-        }
-        .menu li{
-            float: left;
-        }
-        .item-menu{
-            padding: 16px;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #B4C4AE
-        }
-    </style>
     <body>
-        <ul class="menu">
-            <li><a class="item-menu" href="#sobre"> Sobre mim</a></li>
-            <li><a class="item-menu" href="#profissional">Profissional</a></li>
-            <li><a class="item-menu" href="#habilidades">Habilidades</a></li>
-            <li><a class="item-menu" href="#ferramentas">Ferramentas</a></li>
-            <li><a class="item-menu" href="https://gustavolendimuth.myportfolio.com">Portfólio Designer Gráfico</a></li>
-            <li><a class="item-menu" href="https://www.linkedin.com/in/gustavolendimuth">Linkedin</a></li>
-        </ul>
-        <h1>Olá, eu sou Gustavo Lendimuth!</h1>
-        <img src="imagens/imagem-topo.jpg" width="400px" alt="Pessoa com computador e dados saindo de uma tela" >
-        <h2>e este é o meu portfólio</h2>
-        <img id="sobre" class="imagem-arredondada" src="imagens/gustavo-lendimuth-foto.jpg" width="150px" alt="Foto de Gustavo Lendimuth">
-        <h3>Um pouco sobre mim</h3>
-        <p>Meu nome é <em>Luiz Gustavo Lendimuth Araujo Augusto</em> e tenho 40 anos bem vividos.</p>
-        <p>Sou Brasileiro, nascido em São Paulo Capital, mas no momento estou morando em Juiz de Fora em Minas Gerais.</p>
-        <img id="profissional" src="imagens/imagem-pagina.jpg" width="400px" alt="Menina com notebook no colo e tela com código HTML">
-        <h3>Profissional</h3>
-        <p>Sou <strong>Designer Gráfico</strong> com 20 anos de experiência, com muita bagagem, mas pronto para novidades.</p>
-        <p>Sou curioso, gosto de inovar e de um bom desafio. Gosto de aprender e aprendo rápido.</p> 
-        <p>Trabalho muito bem em equipe e mantenho um ótimo relacionamento com meus colegas de trabalho.</p>
-        <p>Este ano decidi fazer uma transição de carreira, então comecei a fazer o curso de <strong>Desenvolvimento Web na Trybe</strong>, para dar início a minha jornada como DEV.</p>
-        <img id="habilidades" src="imagens/imagem-habilidades.jpg" width="400px" alt="Pessoas com engrenagens">
-        <h3>Habilidades</h3>
-            <ul>
-                <li>Html Básico</li>
-                <li>Css Básico</li>
-                <li>JavaScript Básico</li>
-                <li>Bash</li>
+        <div class="menu-box">
+            <ul class="menu">
+                <li><a class="item-menu" href="#sobre"> Sobre mim</a></li>
+                <li><a class="item-menu" href="#profissional">Profissional</a></li>
+                <li><a class="item-menu" href="#habilidades">Habilidades</a></li>
+                <li><a class="item-menu" href="#ferramentas">Ferramentas</a></li>
+                <li><a class="item-menu" href="https://gustavolendimuth.myportfolio.com">Portfólio Designer Gráfico</a></li>
+                <li><a class="item-menu" href="https://www.linkedin.com/in/gustavolendimuth">Linkedin</a></li>
             </ul>
-        <img id="ferramentas" src="imagens/imagem-ferramentas.jpg" width="400px" alt="Pessoas com telas com códigos">
-        <h3>Ferramentas</h3>
-        <ul>
-            <li>VScode</li>
-            <li>Adobe Dreamweaver</li>
-            <li>Terminal</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Indesign</li>
-        </ul>
-        <img src="imagens/imagem-bottom.jpg" width="400px" alt="Maleta gigante e, pessoa segurando uma pasta">
-        <p><a href="https://gustavolendimuth.myportfolio.com"><em>portfólio de designer gráfico</em></a></p>
-    </body>
+        </div>
+        <div class="header-box">
+            <h1>Olá, eu sou Gustavo Lendimuth!</h1>
+            <img src="imagens/imagem-topo.jpg" width="400px" alt="Pessoa com computador e dados saindo de uma tela" >
+            <h2>e este é o meu portfólio</h2>
+        </div>
+        <div id="sobre" class="sobre-box-bg">
+            <div class="sobre-box">
+                <img id="sobre-imagem" class="imagem-arredondada" src="imagens/gustavo-lendimuth-foto.jpg" alt="Foto de Gustavo Lendimuth">
+                <h3 class="title">Um pouco sobre mim</h3>
+                <p>Meu nome é <em>Luiz Gustavo Lendimuth Araujo Augusto</em> e tenho 40 anos bem vividos.</p>
+                <p>Sou Brasileiro, nascido em São Paulo Capital, mas no momento estou morando em Juiz de Fora em Minas Gerais.</p>
+            </div>
+        </div>
+        <div id="profissional" class="profissional-box">
+            <div class="title">
+                <h3>Profissional</h3>
+            </div>
+            <div class="profissional-box-imagem">
+                <img id="profissional-imagem" src="imagens/imagem-pagina.jpg" alt="Menina com notebook no colo e tela com código HTML">
+            </div>
+            <div class="profissional-box-texto">
+                <p>Sou <strong>Designer Gráfico</strong> com 20 anos de experiência, com muita bagagem, mas pronto para novidades.</p>
+                <p>Sou curioso, gosto de inovar e de um bom desafio. Gosto de aprender e aprendo rápido.</p> 
+                <p>Trabalho muito bem em equipe e mantenho um ótimo relacionamento com meus colegas de trabalho.</p>
+                <p>Este ano decidi fazer uma transição de carreira, então comecei a fazer o curso de <strong>Desenvolvimento Web na Trybe</strong>, para dar início a minha jornada como DEV.</p>
+            </div>
+        </div>
+        <div class="habilidades-box">
+            <img id="habilidades-imagem" src="imagens/imagem-habilidades.jpg" alt="Pessoas com engrenagens">
+            <h3>Habilidades</h3>
+            <div class="habilidades-ul">
+                <ul>
+                    <li>HTML Básico</li>
+                    <li>CSS Básico</li>
+                    <li>JavaScript Básico</li>
+                    <li>Bash</li>
+                    <li>Web Design</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ferramentas-box">
+            <img id="ferramentas-imagem" src="imagens/imagem-ferramentas.jpg" alt="Pessoas com telas com códigos">
+            <h3>Ferramentas</h3>
+            <div class="ferramentas-ul">
+                <ul>
+                    <li>VScode</li>
+                    <li>Adobe Dreamweaver</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Indesign</li>
+                </ul>
+            </div>
+        </div>        
+        <div class="bottom-box">
+            <img src="imagens/imagem-bottom.png" width="400px" alt="Maleta gigante e, pessoa segurando uma pasta">
+            <p><a href="https://gustavolendimuth.myportfolio.com"><em>portfólio de designer gráfico</em></a></p>
+        </div>
     </body>
 </html>

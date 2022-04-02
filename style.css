@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    
+}
+h1 {
+    color: #D89A9E;
+    font-size: 40px;
+}
+h2{
+    color: #D89A9E;
+    font-size: 35px;
+}
+h3{
+    color: #D89A9E;
+    font-size: 35px;
+}
+p, li, a{
+    color: #586994;
+    font-weight: 400;
+    font-size: 18px;  
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+p {
+    margin: 20px 0;
+}
+ul{
+    list-style-position: inside;
+}
+a:hover {
+    color: #DCA7AB;
+}
+.title{
+    padding: 20px 0;
+}
+.imagem-arredondada {
+    border-radius: 100%;
+}
+.menu-box{
+    background-color: #F9F3F1;
+    padding: 15px;
+    
+}
+.menu {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.menu li{
+    float: left;
+}
+.item-menu{
+    padding: 16px;
+    text-decoration: none;
+}
+.header-box {
+    margin: 70px 0;
+}
+.sobre-box-bg {
+    background-color: #E6EAEF;
+}
+.sobre-box{
+    padding: 100px 0px;
+    max-width: 750px;
+    margin: auto;
+}
+#sobre-imagem{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.profissional-box {
+    padding: 100px 0;
+}
+.profissional-box-imagem {
+    vertical-align: middle;
+    width: fit-content;
+    display: inline-block;
+}
+.profissional-box-texto {
+    vertical-align: middle;
+    max-width: 500px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+}
+#profissional-imagem{
+    max-width: 500px;
+}
+.habilidades-box{
+    width: 400px;
+    margin: 50px auto;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+.habilidades-ul{
+    text-align: left;
+    width: 210px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#habilidades-imagem{
+    width: 400px;
+    padding: 35px 0 10px;
+}
+.ferramentas-box{
+    width: 400px;
+    display: inline-block;
+    margin: 50px auto;
+    vertical-align: top;
+    padding-left: 20px;
+}
+.ferramentas-ul {
+    text-align: left;
+    width: 225px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#ferramentas-imagem {
+    padding: 10px 0;
+    width: 300px;
+}
+.bottom-box {
+    padding: 100px 0 30px;
+    background-color: #EED3D5;
+}
+
+/* 
+div {
+    border: 1px solid red;
+} */
